@@ -1,7 +1,7 @@
 const INSTAGRAM_POSTS = [
-  // "https://www.instagram.com/p/POST_ID_1/",
-  // "https://www.instagram.com/p/POST_ID_2/",
-  // "https://www.instagram.com/p/POST_ID_3/"
+  "https://www.instagram.com/p/DUhWnU3E918/",
+  "https://www.instagram.com/p/DUa62lvkxqW/",
+  "https://www.instagram.com/p/DUhVy1kE-pZ/"
 ];
 
 const toggleButton = document.querySelector('.nav-toggle');
