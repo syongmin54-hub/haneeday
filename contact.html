@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | 하니데이</title>
+  <meta name="description" content="하니데이 문의하기. 협업, 스토어 오픈 알림, 제품 문의를 남겨주세요.">
+  <meta property="og:title" content="Contact | 하니데이">
+  <meta property="og:description" content="협업, 스토어 오픈 알림, 제품 문의 접수.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&family=Noto+Serif+KR:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">haneeday</a>
+      <nav class="nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="brew.html">Brew Guide</a>
+        <a href="collab.html">Collab</a>
+        <a class="active" href="contact.html">Contact</a>
+      </nav>
+      <div class="header-cta">
+        <a class="btn ghost" href="#contact-form">협업 문의</a>
+        <button class="nav-toggle" aria-label="메뉴 열기" aria-expanded="false">
+          <span>메뉴</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container split">
+        <div>
+          <span class="eyebrow">Contact</span>
+          <h1>문의하기</h1>
+          <p>협업, 스토어 오픈 알림, 제품 문의를 남겨주세요. 확인 후 순차적으로 답변드리겠습니다.</p>
+          <div class="card">
+            <h3>개인정보 안내</h3>
+            <p>수집 항목: 이름, 이메일, 문의유형, 메시지</p>
+            <p>이용 목적: 문의 처리 및 회신</p>
+            <p>보관 기간: 처리 완료 후 지체 없이 파기</p>
+          </div>
+        </div>
+        <form id="contact-form" class="form-card" data-formspree action="https://formspree.io/f/mjgelybw" method="POST">
+          <div class="form-grid">
+            <div>
+              <label for="contact-name">이름</label>
+              <input id="contact-name" name="name" type="text" required>
+            </div>
+            <div>
+              <label for="contact-email">이메일</label>
+              <input id="contact-email" name="email" type="email" required>
+            </div>
+            <div>
+              <label for="contact-type">문의 유형</label>
+              <select id="contact-type" name="type" required>
+                <option value="협업">협업</option>
+                <option value="스토어 오픈 알림">스토어 오픈 알림</option>
+                <option value="제품">제품</option>
+                <option value="기타">기타</option>
+              </select>
+            </div>
+            <div>
+              <label for="contact-message">메시지</label>
+              <textarea id="contact-message" name="message" required></textarea>
+            </div>
+            <div>
+              <label>
+                <input type="checkbox" name="agreement" required>
+                개인정보 수집 및 이용에 동의합니다.
+              </label>
+              <p class="helper">문의 처리 목적이며 처리 완료 후 지체 없이 파기됩니다.</p>
+            </div>
+            <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="display:none">
+            <button class="btn primary" type="submit">문의 보내기</button>
+            <div class="toast" role="status" aria-live="polite"></div>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <a class="btn ghost" href="https://www.instagram.com/haneeday_tea" target="_blank" rel="noreferrer">Instagram</a>
+        <p class="notice">본 제품은 식품이며 의약품이 아닙니다. 원료에 민감하거나 특정 질환이 있거나 약을 복용 중인 경우 섭취 전 전문가와 상담을 권장합니다. 개인차가 있을 수 있습니다.</p>
+      </div>
+      <small>© 2026 haneeday. All rights reserved.</small>
+    </div>
+  </footer>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>
