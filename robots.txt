@@ -1,0 +1,9 @@
+User-agent: Yeti
+Allow: /
+
+User-agent: *
+Allow: /
+Allow: /assets/
+Allow: /favicon.ico
+
+Sitemap: https://haneeday.pages.dev/sitemap.xml
