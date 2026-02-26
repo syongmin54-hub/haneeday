@@ -232,12 +232,18 @@ textarea:focus-visible,
 
 .hero {
   position: relative;
-  min-height: 100vh;
+  min-height: auto;
+  height: 33.6vw;
   display: flex;
   align-items: center;
-  padding: calc(var(--space-2xl) + 40px) 0 var(--space-2xl);
-  background-image: url("hero.png");
-  background-size: cover;
+  padding: 0;
+  background-image: url("hero.jpg");
+  background-image: image-set(
+    url("hero.webp") type("image/webp"),
+    url("hero.jpg") type("image/jpeg")
+  );
+  background-size: contain;
+  background-repeat: no-repeat;
   background-position: center right;
   color: #fefae0;
 }
@@ -509,10 +515,6 @@ textarea {
 @media (max-width: 980px) {
   .section {
     padding: var(--space-xl) 0;
-  }
-
-  .hero {
-    padding: var(--space-2xl) 0 var(--space-xl);
   }
 
   .hero-grid,
