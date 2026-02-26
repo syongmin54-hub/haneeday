@@ -6,23 +6,13 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://haneeday.pages.dev/products.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://haneeday.pages.dev/brew.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://haneeday.pages.dev/collab.html</loc>
+    <loc>https://haneeday.pages.dev/about.html</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://haneeday.pages.dev/contact.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.7</priority>
   </url>
 </urlset>
