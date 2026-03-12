@@ -486,6 +486,59 @@ textarea:focus-visible,
   gap: 12px;
 }
 
+.compare-table {
+  overflow-x: auto;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--card);
+  box-shadow: var(--shadow);
+}
+
+.compare-table table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 760px;
+}
+
+.compare-table th,
+.compare-table td {
+  padding: 16px 18px;
+  border-bottom: 1px solid var(--line);
+  text-align: left;
+  vertical-align: top;
+}
+
+.compare-table thead th {
+  background: #f6edd8;
+  font-size: 0.9rem;
+}
+
+.compare-table tbody th {
+  font-family: var(--serif);
+  font-size: 1rem;
+  color: var(--accent);
+}
+
+.compare-table tbody tr:last-child th,
+.compare-table tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.ingredient-grid {
+  margin-top: 24px;
+}
+
+.ingredient-card {
+  gap: 14px;
+}
+
+.meta-inline {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 8px;
+}
+
 .faq {
   border-top: 1px solid var(--line);
 }
